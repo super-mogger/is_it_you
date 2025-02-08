@@ -61,7 +61,6 @@ const showMessageSequence = async () => {
   emojiContainer.classList.add("hidden");
   resultContainer.classList.remove("hidden");
   resultContainer.classList.add("opacity-100");
-  gifResult.play();
 };
 
 // Function to move the No button
