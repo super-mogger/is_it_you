@@ -1,6 +1,5 @@
 const questionContainer = document.querySelector(".question-container");
 const resultContainer = document.querySelector(".result-container");
-const gifResult = document.querySelector(".gif-result");
 const heartLoader = document.querySelector(".cssload-main");
 const emojiContainer = document.querySelector(".emoji-messages-container");
 const messageBox = document.querySelector(".message-box");
@@ -115,7 +114,7 @@ yesBtn.addEventListener("click", () => {
       setTimeout(() => {
         heartLoader.classList.add("hidden");
         showMessageSequence();
-      }, 200); // reduced from 300ms to 200ms
+      }, 200);
     }, 1500);
-  }, 200); // reduced from 300ms to 200ms
+  }, 200);
 });
