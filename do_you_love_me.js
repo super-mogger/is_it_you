@@ -58,8 +58,15 @@ const showMessageSequence = async () => {
   
   // Hide emoji container and show final result
   emojiContainer.classList.add("hidden");
+  resultContainer.style.display = "block";
   resultContainer.classList.remove("hidden");
   resultContainer.classList.add("opacity-100");
+  
+  // Reload Tenor embed script to ensure GIF loads
+  const script = document.createElement("script");
+  script.src = "https://tenor.com/embed.js";
+  script.async = true;
+  document.body.appendChild(script);
 };
 
 // Function to move the No button
