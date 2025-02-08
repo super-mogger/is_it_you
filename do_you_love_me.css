@@ -1,0 +1,189 @@
+/**Tiktok meowish**/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe6e9;
+  font-family: "Quicksand", sans-serif;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.question-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transition: 0.2s;
+}
+.tenor-gif-embed {
+  height: 15rem;
+  pointer-events: none;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+.question {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.btn {
+  position: absolute;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ff6b81;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 107, 129, 0.5);
+}
+.btn:hover {
+  background-color: #ffa4b1;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px rgba(255, 107, 129, 0.7);
+  text-shadow: 1px 1px 5px rgba(255, 182, 193, 0.8);
+}
+
+.yes-btn {
+  right: 54%;
+}
+.no-btn {
+  left: 54%;
+}
+
+.result-container {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+.gif-result {
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.result-container h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+/* Heart Loader Animation */
+.cssload-main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.cssload-main * {
+  font-size: 62px;
+}
+
+.cssload-heart {
+  animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.cssload-heartL,
+.cssload-heartR {
+  width: 1em;
+  height: 1em;
+  border: 1px solid #8B0000;
+  background-color: #8B0000;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.cssload-heartL {
+  transform: translate(-28px, -27px);
+  animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+
+.cssload-heartR {
+  transform: translate(28px, -27px);
+  animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+
+.cssload-square {
+  width: 1em;
+  height: 1em;
+  border: 1px solid #8B0000;
+  background-color: #8B0000;
+  position: absolute;
+  transform: scale(1) rotate(-45deg);
+  animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+
+.cssload-shadow {
+  position: absolute;
+  top: 97px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.5em;
+  width: 1em;
+  height: 0.24em;
+  background-color: rgba(215, 215, 215, 0.7);
+  border: 1px solid rgba(215, 215, 215, 0.7);
+  border-radius: 50%;
+  animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+
+@keyframes cssload-square {
+  50% {
+    border-radius: 100%;
+    transform: scale(0.5) rotate(-45deg);
+  }
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+}
+
+@keyframes cssload-heart {
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes cssload-heartL {
+  60% {
+    transform: translate(-28px, -27px) scale(0.4);
+  }
+}
+
+@keyframes cssload-heartR {
+  40% {
+    transform: translate(28px, -27px) scale(0.4);
+  }
+}
+
+@keyframes cssload-shadow {
+  50% {
+    transform: translateX(-50%) scale(0.5);
+    border-color: rgba(228, 228, 228, 0.7);
+  }
+}

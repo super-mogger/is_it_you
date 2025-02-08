@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>मेरो माया - My Love</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              garhwal: {
+                red: '#8B0000',
+                green: '#2F4F4F',
+                earth: '#8B4513',
+                pink: '#FFB6C1'
+              }
+            },
+            fontFamily: {
+              quicksand: ['Quicksand', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gradient-to-br from-garhwal-pink to-white min-h-screen font-quicksand">
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none">
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/flowers.png')] opacity-10"></div>
+      <div class="absolute bottom-0 w-full h-32 overflow-hidden opacity-20">
+        <div class="absolute -bottom-10 left-0 w-0 h-0 border-l-[100vw] border-b-[20vh] border-l-transparent border-b-garhwal-earth"></div>
+        <div class="absolute -bottom-5 left-1/4 w-0 h-0 border-l-[50vw] border-b-[25vh] border-l-transparent border-b-garhwal-green"></div>
+      </div>
+    </div>
+
+    <div class="question-container container relative z-10">
+      <div class="max-w-lg mx-auto px-4 py-4 md:py-8 text-center min-h-screen flex flex-col justify-center items-center">
+        <div class="w-full mb-4 md:mb-8">
+          <div class="relative w-16 h-16 md:w-24 md:h-24 mx-auto mb-4 text-garhwal-earth">
+            <i class="fas fa-mountain text-4xl md:text-6xl"></i>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <i class="fas fa-heart text-2xl md:text-3xl text-garhwal-red"></i>
+            </div>
+          </div>
+          
+          <div class="tenor-gif-embed rounded-xl shadow-lg overflow-hidden mb-6 md:mb-8 max-w-[280px] md:max-w-full mx-auto"
+            data-postid="25789758"
+            data-share-method="host"
+            data-width="100%">
+          </div>
+          <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+
+        <div class="absolute top-4 left-0 w-full">
+          <div class="flex justify-between px-4 opacity-30">
+            <i class="fas fa-om text-xl md:text-2xl text-garhwal-red"></i>
+            <i class="fas fa-peace text-xl md:text-2xl text-garhwal-red"></i>
+          </div>
+        </div>
+
+        <div class="mb-6 md:mb-8">
+          <h2 class="text-3xl md:text-5xl font-bold text-garhwal-red mb-2">तुम मेरो माया छौ?</h2>
+          <p class="text-xl md:text-3xl text-garhwal-green">Do you love me?</p>
+        </div>
+        
+        <div class="relative mx-auto w-[280px] md:w-[300px] h-[120px] md:h-[200px] bg-transparent">
+          <button class="yes-btn absolute left-0 top-1/2 -translate-y-1/2 bg-garhwal-red hover:bg-red-700 text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded-full transform hover:scale-110 transition-all shadow-lg text-sm md:text-base">
+            हाँ / Yes
+          </button>
+          <button class="no-btn absolute right-0 top-1/2 -translate-y-1/2 bg-garhwal-earth hover:bg-brown-700 text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded-full transform hover:scale-110 transition-all shadow-lg text-sm md:text-base">
+            नाई / No
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- New Emoji Messages Container -->
+    <div class="emoji-messages-container hidden fixed inset-0 flex items-center justify-center z-50">
+      <div class="text-center">
+        <div class="message-box bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl max-w-[300px] md:max-w-[400px] mx-4 transform scale-0 transition-all duration-500">
+          <div class="emoji text-6xl md:text-7xl mb-4"></div>
+          <div class="message text-xl md:text-2xl font-bold text-garhwal-red"></div>
+          <div class="character text-lg md:text-xl text-garhwal-green mt-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cssload-main hidden">
+      <div class="cssload-heart">
+        <span class="cssload-heartL"></span>
+        <span class="cssload-heartR"></span>
+        <span class="cssload-square"></span>
+      </div>
+      <div class="cssload-shadow"></div>
+    </div>
+
+    <div class="result-container container hidden">
+      <div class="max-w-lg mx-auto px-4 py-4 md:py-8 text-center min-h-screen flex flex-col justify-center items-center">
+        <video class="gif-result rounded-xl shadow-lg mx-auto mb-6 max-w-[280px] md:max-w-full" src="cute love gif.mp4" autoplay loop></video>
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 md:p-6 shadow-lg w-full max-w-[280px] md:max-w-full">
+          <h2 class="text-2xl md:text-4xl font-bold text-garhwal-red mb-2">मी जान्दा थियो! 😍</h2>
+          <p class="text-xl md:text-2xl text-garhwal-green">I knew it!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="do_you_love_me.js"></script>
+  </body>
+</html>
